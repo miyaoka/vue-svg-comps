@@ -1,30 +1,23 @@
 <template>
-  <div id="app">
-    <hello-world
-      :text="'world'"
-    ></hello-world>
+  <div>
+    <spiral-path/>
+    <spiral-text/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue'
+import SpiralText from '@/example/SpiralText.vue'
+import SpiralPath from '@/example/SpiralPath.vue'
 
 export default Vue.extend({
   name: 'app',
   components: {
-    HelloWorld
+    SpiralText,
+    SpiralPath
   },
-  props: {
-    size: {
-      type: Number,
-      required: false,
-      default: 10
-    }
-  },
-  computed: {
-    halfSize (): number {
-      return this.size / 2
+  data: function () {
+    return {
     }
   }
 })
