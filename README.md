@@ -1,4 +1,4 @@
-# vue-ts
+# vue-svg-comps
 
 > A Vue.js project
 
