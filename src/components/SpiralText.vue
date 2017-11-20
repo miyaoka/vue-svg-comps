@@ -47,55 +47,16 @@ export default Vue.extend({
     }
   },
   props: {
-    size: {
-      type: Number,
-      required: false,
-      default: 16
-    },
-    fontSize: {
-      type: Number,
-      required: false,
-      default: 12
-    },
-    lineHeight: {
-      type: Number,
-      required: false,
-      default: 1.0
-    },
-    text: {
-      type: String,
-      required: false,
-      default: ''
-    },
-    strokeWidth: {
-      type: Number,
-      required: false,
-      default: 0
-    },
-    inToOut: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
-    counterclockwise: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
-    startFromInner: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
-    initAngle: {
-      type: Number,
-      required: false,
-      default: 0 // degree
-    },
-    paddingInner: {
-      type: Number,
-      required: false
-    }
+    size: { type: Number, required: false, default: 16 },
+    fontSize: { type: Number, required: false, default: 12 },
+    lineHeight: { type: Number, required: false, default: 1.0 },
+    text: { type: String, required: false, default: '' },
+    strokeWidth: { type: Number, required: false, default: 0 },
+    inToOut: { ype: Boolean, required: false, default: false },
+    counterclockwise: { ype: Boolean, required: false, default: false },
+    startFromInner: { ype: Boolean, required: false, default: false },
+    initAngle: { type: Number, required: false, default: 0 },
+    paddingInner: { type: Number, required: false }
   },
   computed: {
     halfSize (): number {

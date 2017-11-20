@@ -33,58 +33,19 @@ export default Vue.extend({
     }
   },
   props: {
-    pathId: {
-      type: String,
-      required: false
-    },
-    size: {
-      type: Number,
-      required: false,
-      default: 100
-    },
+    pathId: { type: String, required: false },
+    size: { type: Number, required: false, default: 100 },
     // pixel per rotation
-    span: {
-      type: Number,
-      required: false,
-      default: 10
-    },
-    strokeWidth: {
-      type: Number,
-      required: false,
-      default: 0
-    },
-    stroke: {
-      type: String,
-      required: false,
-      default: 'black'
-    },
+    span: { type: Number, required: false, default: 10 },
+    strokeWidth: { type: Number, required: false, default: 0 },
+    stroke: { type: String, required: false, default: 'black' },
     // direction in-to-out
-    startFromInner: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
+    startFromInner: { type: Boolean, required: false, default: false },
     // direction clockwise
-    counterclockwise: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
-    initAngle: {
-      type: Number,
-      required: false,
-      default: 0 // degree
-    },
-    paddingOuter: {
-      type: Number,
-      required: false,
-      default: 0
-    },
-    paddingInner: {
-      type: Number,
-      required: false,
-      default: 0
-    }
+    counterclockwise: { type: Boolean, required: false, default: false },
+    initAngle: { type: Number, required: false, default: 0 },
+    paddingOuter: { type: Number, required: false, default: 0 },
+    paddingInner: { type: Number, required: false, default: 0 }
   },
   computed: {
     halfSize (): number {
